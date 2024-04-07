@@ -3,9 +3,9 @@ package classes;
 import java.util.Date;
 
 public class Pedido {
-	private Date dtemissao;
-	private Date dtentrega;
-	private double valortotal;
+	private Date dtEmissao;
+	private Date dtEntrega;
+	private double valorTotal;
 	private String observacao;
 	
 	
@@ -14,39 +14,39 @@ public class Pedido {
 	
 	@Override
 	public String toString() {
-		return "Pedido \nData Emissao: " + dtemissao + "\nData Entrega: " + dtentrega + "\nValor total: " + valortotal
+		return "Pedido \nData Emissao: " + dtEmissao + "\nData Entrega: " + dtEntrega + "\nValor total: " + valorTotal
 				+ "\nObservacao:" + observacao ;
 	}
 	/**
-	 * @param dtemissao
-	 * @param dtentrega
-	 * @param valortotal
+	 * @param dtEmissao
+	 * @param dtEntrega
+	 * @param valorTotal
 	 * @param observacao
 	 */
-	public Pedido(Date dtemissao, Date dtentrega, double valortotal, String observacao) {
+	public Pedido(Date dtEmissao, Date dtEntrega, double valorTotal, String observacao) {
 		super();
-		this.dtemissao = dtemissao;
-		this.dtentrega = dtentrega;
-		this.valortotal = valortotal;
+		this.dtEmissao = dtEmissao;
+		this.dtEntrega = dtEntrega;
+		this.valorTotal = valorTotal;
 		this.observacao = observacao;
 	}
-	public Date getDtemissao() {
-		return dtemissao;
+	public Date getDtEmissao() {
+		return dtEmissao;
 	}
-	public void setDtemissao(Date dtemissao) {
-		this.dtemissao = dtemissao;
+	public void setDtEmissao(Date dtEmissao) {
+		this.dtEmissao = dtEmissao;
 	}
-	public Date getDtentrega() {
-		return dtentrega;
+	public Date getDtEntrega() {
+		return dtEntrega;
 	}
-	public void setDtentrega(Date dtentrega) {
-		this.dtentrega = dtentrega;
+	public void setDtentrega(Date dtEntrega) {
+		this.dtEntrega = dtEntrega;
 	}
-	public double getValortotal() {
-		return valortotal;
+	public double getValorTotal() {
+		return valorTotal;
 	}
-	public void setValortotal(double valortotal) {
-		this.valortotal = valortotal;
+	public void setValortotal(double valorTotal) {
+		this.valorTotal = valorTotal;
 	}
 	public String getObservacao() {
 		return observacao;

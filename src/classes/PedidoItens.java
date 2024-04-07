@@ -1,19 +1,19 @@
 package classes;
 
 public class PedidoItens {
-	private double vlunitario;
+	private double vlUnitario;
 	private Produto produto;
-	private double qtproduto;
-	private double vldesconto;
+	private double qtProduto;
+	private double vlDesconto;
 
 	
-	/ Construtor
-    public PedidoItens(Produto produto, double vlunitario, int qtproduto, double vldesconto) {
+	// Construtor
+    public PedidoItens(Produto produto, double vlUnitario, int qtProduto, double vlDesconto) {
         
         this.produto = produto;
-        this.vlunitario = vlunitario;
-        this.qtproduto = qtproduto;
-        this.vldesconto = vldesconto;
+        this.vlUnitario = vlUnitario;
+        this.qtProduto = qtProduto;
+        this.vlDesconto = vlDesconto;
     }
 
     
@@ -26,33 +26,33 @@ public class PedidoItens {
         this.produto = produto;
     }
 
-    public double getVlunitario() {
-        return vlunitario;
+    public double getvlUnitario() {
+        return vlUnitario;
     }
 
-    public void setVlunitario(double vlunitario) {
-        this.vlunitario = vlunitario;
+    public void setvlUnitario(double vlUnitario) {
+        this.vlUnitario = vlUnitario;
     }
 
-    public int getQtproduto() {
-        return qtproduto;
+    public int getqtProduto() {
+        return qtProduto;
     }
 
-    public void setQtproduto(int qtproduto) {
-        this.qtproduto = qtproduto;
+    public void setqtProduto(int qtProduto) {
+        this.qtProduto = qtProduto;
     }
 
-    public double getVldesconto() {
-        return vldesconto;
+    public double getvlDesconto() {
+        return vlDesconto;
     }
 
-    public void setVldesconto(double vldesconto) {
-        this.vldesconto = vldesconto;
+    public void setvlDesconto(double vlDesconto) {
+        this.vlDesconto = vlDesconto;
     }
 
     // Método para calcular o valor total do item
     public double calcularValorTotal() {
-        return (vlunitario * qtproduto) - vldesconto;
+        return (vlUnitario * qtProduto) - vlDesconto;
     }
 
     // Método toString
@@ -61,9 +61,9 @@ public class PedidoItens {
         return "PedidoItens{" +
                 "idpedidoitem=" + idpedidoitem +
                 ", produto=" + produto +
-                ", vlunitario=" + vlunitario +
-                ", qtproduto=" + qtproduto +
-                ", vldesconto=" + vldesconto +
+                ", vlUnitario=" + vlUnitario +
+                ", qtProduto=" + qtProduto +
+                ", vlDesconto=" + vlDesconto +
                 '}';
     }
 }
