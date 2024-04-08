@@ -1,50 +1,52 @@
 package classes;
 
 public class Produto {
-	private int idproduto;
+	private int idProduto;
     private String descricao;
-    private double vlcusto;
-    private double vlvenda;
+    private double vlCusto;
+    private double vlVenda;
     private String categoria;
     
     
     
     
     
+	
+	
 	@Override
 	public String toString() {
-		return "Produto \nDescricao=" + descricao + "\nValor Custo: " + vlcusto + "\t\tValor venda: "
-				+ vlvenda + "\nCategoria=" + categoria;
+		return "Produto [idProduto=" + idProduto + ", descricao=" + descricao + ", vlCusto=" + vlCusto + ", vlVenda="
+				+ vlVenda + ", categoria=" + categoria + "]";
 	}
 	/**
-	 * @param idproduto
+	 * @param idProduto
 	 * @param descricao
-	 * @param vlcusto
-	 * @param vlvenda
+	 * @param vlCusto
+	 * @param vlVenda
 	 * @param categoria
 	 */
-	public Produto(int idproduto, String descricao, double vlcusto, double vlvenda, String categoria) {
+	public Produto( String descricao, double vlCusto, double vlVenda, String categoria) {
 		super();
-		this.idproduto = idproduto;
+		
 		this.descricao = descricao;
-		this.vlcusto = vlcusto;
-		this.vlvenda = vlvenda;
+		this.vlCusto = vlCusto;
+		this.vlVenda = vlVenda;
 		this.categoria = categoria;
-	}
-	public int getIdproduto() {
-		return idproduto;
 	}
 	public String getDescricao() {
 		return descricao;
 	}
-	public double getVlcusto() {
-		return vlcusto;
+	public double getvlCusto() {
+		return vlCusto;
 	}
-	public double getVlvenda() {
-		return vlvenda;
+	public double getvlVenda() {
+		return vlVenda;
 	}
 	public String getCategoria() {
 		return categoria;
+	}
+	public int getIdProduto() {
+		return idProduto;
 	}
     
     
