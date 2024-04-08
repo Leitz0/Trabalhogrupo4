@@ -26,27 +26,27 @@ public class PedidoItens {
         this.produto = produto;
     }
 
-    public double getvlUnitario() {
+    public double getVlUnitario() {
         return vlUnitario;
     }
 
-    public void setvlUnitario(double vlUnitario) {
+    public void setVlUnitario(double vlUnitario) {
         this.vlUnitario = vlUnitario;
     }
 
-    public int getqtProduto() {
+    public int getQtProduto() {
         return qtProduto;
     }
 
-    public void setqtProduto(int qtProduto) {
+    public void setQtProduto(int qtProduto) {
         this.qtProduto = qtProduto;
     }
 
-    public double getvlDesconto() {
+    public double getVlDesconto() {
         return vlDesconto;
     }
 
-    public void setvlDesconto(double vlDesconto) {
+    public void setVlDesconto(double vlDesconto) {
         this.vlDesconto = vlDesconto;
     }
 

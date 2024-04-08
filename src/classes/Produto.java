@@ -31,16 +31,16 @@ public class Produto {
 		this.vlVenda = vlVenda;
 		this.categoria = categoria;
 	}
-	public int getidProduto() {
+	public int getIdProduto() {
 		return idProduto;
 	}
 	public String getDescricao() {
 		return descricao;
 	}
-	public double getvlCusto() {
+	public double getVlCusto() {
 		return vlCusto;
 	}
-	public double getvlVenda() {
+	public double getVlVenda() {
 		return vlVenda;
 	}
 	public String getCategoria() {
