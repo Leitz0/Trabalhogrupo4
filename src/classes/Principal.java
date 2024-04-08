@@ -32,7 +32,7 @@ public class Principal {
 		opcao = scanner.nextInt();
 		
 		switch(opcao) {
-		case 1:  System.out.println("1");
+		case 1:  Cliente.buscaCliente();
 			break;
 		case 2: System.out.println("2");
 			break;
