@@ -1,6 +1,7 @@
 package classes;
 
 public class PedidoItens {
+	private int idPedidoItem;
 	private double vlUnitario;
 	private Produto produto;
 	private double qtProduto;
@@ -34,7 +35,7 @@ public class PedidoItens {
         this.vlUnitario = vlUnitario;
     }
 
-    public int getQtProduto() {
+    public double getQtProduto() {
         return qtProduto;
     }
 
@@ -54,12 +55,25 @@ public class PedidoItens {
     public double calcularValorTotal() {
         return (vlUnitario * qtProduto) - vlDesconto;
     }
+    
 
-    // Método toString
+    public int getIdPedidoItem() {
+		return idPedidoItem;
+	}
+
+
+
+	public void setIdPedidoItem(int idPedidoItem) {
+		this.idPedidoItem = idPedidoItem;
+	}
+
+
+
+	// Método toString
     @Override
     public String toString() {
         return "PedidoItens{" +
-                "idpedidoitem=" + idpedidoitem +
+                "idpedidoitem=" + idPedidoItem +
                 ", produto=" + produto +
                 ", vlUnitario=" + vlUnitario +
                 ", qtProduto=" + qtProduto +
@@ -67,4 +81,4 @@ public class PedidoItens {
                 '}';
     }
 }
-}
+

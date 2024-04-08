@@ -23,6 +23,7 @@ public class Pedido {
 	 * @param valorTotal
 	 * @param observacao
 	 */
+	
 	public Pedido(Date dtEmissao, Date dtEntrega, double valorTotal, String observacao) {
 		super();
 		this.dtEmissao = dtEmissao;
