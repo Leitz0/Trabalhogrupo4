@@ -1,6 +1,7 @@
 package classes;
 
 import java.util.Date;
+import java.util.Scanner;
 
 public class Pedido {
 	private Date dtEmissao;
@@ -55,3 +56,4 @@ public class Pedido {
 		this.observacao = observacao;
 	}
 }
+	
