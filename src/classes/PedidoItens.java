@@ -1,6 +1,9 @@
 package classes;
 
 public class PedidoItens {
+	private int idPedidoItem;
+	
+
 	private double vlUnitario;
 	private Produto produto;
 	private double qtProduto;
@@ -8,15 +11,17 @@ public class PedidoItens {
 
 	
 	// Construtor
-    public PedidoItens(Produto produto, double vlUnitario, int qtProduto, double vlDesconto) {
-        
+    public PedidoItens(int idPedidoItem, Produto produto, double vlUnitario, int qtProduto, double vlDesconto) {
+    	this.idPedidoItem =idPedidoItem;
         this.produto = produto;
         this.vlUnitario = vlUnitario;
         this.qtProduto = qtProduto;
         this.vlDesconto = vlDesconto;
     }
 
-    
+    public int getIdPedidoItem() {
+		return idPedidoItem;
+	}
 
     public Produto getProduto() {
         return produto;
@@ -34,7 +39,7 @@ public class PedidoItens {
         this.vlUnitario = vlUnitario;
     }
 
-    public int getQtProduto() {
+    public double getQtProduto() {
         return qtProduto;
     }
 
@@ -59,12 +64,12 @@ public class PedidoItens {
     @Override
     public String toString() {
         return "PedidoItens{" +
-                "idpedidoitem=" + idpedidoitem +
+                "idPedidoItem=" + idPedidoItem +
                 ", produto=" + produto +
                 ", vlUnitario=" + vlUnitario +
                 ", qtProduto=" + qtProduto +
                 ", vlDesconto=" + vlDesconto +
                 '}';
     }
-}
+
 }

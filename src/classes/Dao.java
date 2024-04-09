@@ -10,7 +10,7 @@ public class Dao {
 		String dataString = "2022-06-15";
 		SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
 		Date dataNasc = formato.parse(dataString);
-		Cliente cliente = new Cliente("nome", "ender", "tel", "cpf", dataNasc);
+		Cliente cliente = new Cliente( "nome", "ender", "tel", "cpf", dataNasc);
 		return cliente;
 	}
 	public static Cliente encontrarNome(String nome) throws ParseException {

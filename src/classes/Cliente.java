@@ -5,25 +5,34 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Cliente extends Pessoa{
+	private int idCliente;
 	private String cpf;
 	private Date dtNascimento;
 		
 	
 	@Override
 	public String toString() {
-		return "Cliente\n" + super.toString() + "\nCPF:" + cpf + "\nData de Nascimento:" + dtNascimento;
-	}
+		return "Cliente\n Cod: "+idCliente + super.toString() + "\nCPF:" + cpf + "\nData de Nascimento:" + dtNascimento;
+	
+	
+	
+	
 	/**
 	 * @param nome
 	 * @param endereco
 	 * @param telefone
+	 * @param idCliente
 	 * @param cpf
-	 * @param dataNascimento
+	 * @param dtNascimento
 	 */
 	public Cliente(String nome, String endereco, String telefone, String cpf, Date dtNascimento) {
 		super(nome, endereco, telefone);
+	
 		this.cpf = cpf;
 		this.dtNascimento = dtNascimento;
+	}
+	public int getIdCliente() {
+		return idCliente;
 	}
 	public String getCpf() {
 		return cpf;
